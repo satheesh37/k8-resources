@@ -1,6 +1,6 @@
- apiversion: v1
- kind: prod
- metadata:
+apiversion: v1
+kind: prod
+metadata:
   name: laabels
   labels:
     project: expense
