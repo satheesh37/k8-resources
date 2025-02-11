@@ -1,0 +1,14 @@
+apiversion: v1
+kind: prod
+metadata:
+  name: environment
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env: 
+      - name: course
+        valuefrom:
+          configMapKeyRef:
+              name: nginx-config
+              key: course
